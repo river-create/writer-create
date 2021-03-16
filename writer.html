@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+<head>
+<title>writer. Only the words matter...</title>
+<span><h2>writer</h2></span>
+</head>
+<link rel="shortcut icon" href="favicon.png">
+<style>
+Body{
+Background-color: #dbffdb;
+}
+Div{
+Padding: 20px;
+Font-family: Georgia;
+Margin: auto;
+Width: 800px;
+}
+P{
+Padding: 20px;
+Background-color: #ffffff;
+Border: 1px solid #8fc28f;
+Font-family: Georgia;
+Margin: auto;
+Width: 800px;
+Height: 1200px
+}
+.button {
+    Font-family: Georgia;
+    border-radius: 10px;
+    border: 1px solid #00ad00;
+    color: black;
+    padding: 10px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.5s;
+    cursor: pointer;
+}
+.button1 {
+     background-color: #00ad00;
+  }
+.button1:hover {
+    border-radius: 10px;
+    background-color: white;
+    color: black;
+    border: 1px solid #00ad00;
+  }
+@font-face {
+  font-family: 'Material Icons';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://example.com/MaterialIcons-Regular.eot); /* For IE6-8 */
+  src: local('Material Icons'),
+    local('MaterialIcons-Regular'),
+    url(https://example.com/MaterialIcons-Regular.woff2) format('woff2'),
+    url(https://example.com/MaterialIcons-Regular.woff) format('woff'),
+    url(https://example.com/MaterialIcons-Regular.ttf) format('truetype');
+}
+.material-icons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;  /* Preferred icon size */
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Support for IE. */
+  font-feature-settings: 'liga';
+}
+
+</style>
+<body>
+<div>
+<table>
+<tr>
+<td contenteditable="true" width="200px"><h2>Untitled</h2></td>
+<td><button class="button button1" onclick="document.execCommand('bold',false,null);" title="Bold text"><b>B</b></button></td>
+<td><button class="button button1" onclick="document.execCommand('italic',false,null);" title="Italic text"><I>I</I></button></td>
+<td><button class="button button1" onclick="document.execCommand('underline',false,null);" title="Underline text"><u>U</u></button></td>
+<td><button class="button button1" onclick="document.execCommand('copy',false,null);" title="Copy selected text"><img src="content_copy_black_24dp.svg" height="15"></button></td>
+<td><button class="button button1" onclick="document.execCommand('cut',false,null);" title="Cut selected text"><img src="content_cut_black_24dp.svg" height="15"></button></td>
+
+</tr>
+</table>
+</div>
+<p contenteditable="true">Bright sunshine poured through the gap in the curtains, and it fell upon a blank piece of paper...waiting to be written upon...</p>
+<br>
+</body>
+</html>
