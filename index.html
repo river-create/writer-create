@@ -48,6 +48,14 @@ Height: 1200px
     border: 1px solid #00ad00;
   }
 </style>
+<script>
+const handleEnter=(e)=>{
+if(e.keyCode===13)
+{
+e.preventDefault();
+}
+}
+</script>
 <body>
 <div>
 <table>
@@ -62,14 +70,14 @@ Height: 1200px
 </tr>
 </table>
 </div>
-<p contenteditable="true">Bright sunshine poured through the gap in the curtains, and it fell upon a blank piece of paper...waiting to be written upon...</p>
+<p contenteditable="true" onkeypress="handleEnter(event)">Bright sunshine poured through the gap in the curtains, and it fell upon a blank piece of paper...waiting to be written upon...</p>
 <br>
-<p contenteditable="true"></p>
+<p contenteditable="true" onkeypress="handleEnter(event)"></p>
 <br>
-<p contenteditable="true"></p>
+<p contenteditable="true" onkeypress="handleEnter(event)"></p>
 <br>
-<p contenteditable="true"></p>
+<p contenteditable="true" onkeypress="handleEnter(event)"></p>
 <br>
-<p contenteditable="true"></p>
+<p contenteditable="true" onkeypress="handleEnter(event)"></p>
 </body>
 </html>
