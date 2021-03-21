@@ -7,3 +7,17 @@ Here is a screenshot of the editor:
 <br>
 
 ![Screenshot 2021-03-21 at 8 01 00 PM](https://user-images.githubusercontent.com/74233464/111908697-2a984000-8a80-11eb-98e7-2e792a2d6d13.png)
+
+<br>
+<br><br>
+<br><br>
+<br><br>
+<br><br>
+<br><br>
+<br><br>
+<br><br>
+<br><br>
+<br><br>
+<br><br>
+<br><br>
+<br>(**secret tip!** Dragging and dropping images onto the page <i>might</i> work if you want to add images to your work)
