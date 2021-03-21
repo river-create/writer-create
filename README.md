@@ -1,9 +1,9 @@
 # writer
-writer is an extremely simple and easy to use online writing tool, but you can't save files in it yet! I am working on it, and will update this when I have completed it. Till then, you can just write!
+writer is an extremely simple and easy to use online writing tool, and I am DONE with adding file saving!! You can now download your written work as an HTML file which opens in all browsers. I will try adding more filetypes, but till then...enjoy!
 <br>
 <br>
 Here is a screenshot of the editor:
 <br>
 <br>
-![image](https://user-images.githubusercontent.com/80742648/111572151-1d542a80-87ce-11eb-8dc7-efe136e4cbaa.png)
 
+![Screenshot 2021-03-21 at 8 01 00 PM](https://user-images.githubusercontent.com/74233464/111908697-2a984000-8a80-11eb-98e7-2e792a2d6d13.png)
