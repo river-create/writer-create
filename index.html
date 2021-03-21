@@ -57,6 +57,32 @@ min-height: 1200px
     border: 1px solid #00ad00;
   }
 </style>
+<script>
+function download(){
+    var text = document.getElementById("writer-page").value;
+    text = text.replace(/\n/g, "\r\n"); // To retain the Line breaks.
+    var blob = new Blob([text], { type: "text/plain"});
+    var anchor = document.createElement("a");
+    anchor.download = "doc.rtf";
+    anchor.href = window.URL.createObjectURL(blob);
+    anchor.target ="_blank";
+    anchor.style.display = "none"; // just to be safe!
+    text = "{\rtf1\ansi\ansicpg1252\cocoartf2578
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+{\info
+{\author Kathir}
+{\*\company -}
+{\*\copyright -}}\paperw11900\paperh16840\margl1440\margr1440\vieww13440\viewh7800\viewkind0
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 "+ text + "}";
+    document.body.appendChild(anchor);
+    anchor.click();
+    document.body.removeChild(anchor);
+ }
+</script>
 <body>
 <div>
 <table>
@@ -75,6 +101,7 @@ min-height: 1200px
 <td><button class="button button1" onclick="document.execCommand('cut',false,null);" title="Cut selected text"><img src="content_cut_black_24dp.svg" height="15"></button></td>
 <td><button class="button button1" onclick="document.execCommand('JustifyRight',false,null);" title="Make left to right"><img src="arrow_forward_black_24dp.svg" height="15"></button></td>
 <td><button class="button button1" onclick="document.execCommand('JustifyLeft',false,null);" title="Make right to left"><img src="arrow_back_black_24dp.svg" height="15"></button></td>
+<button type="button button1" onclick="download()">Save RICH TEXT</button>
 </tr>
 </table>
 </div>
