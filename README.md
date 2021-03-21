@@ -1,5 +1,5 @@
 # writer
-writer is an extremely simple and easy to use online writing tool, and I am DONE with adding file saving!! You can now download your written work as an HTML file which opens in all browsers. I will try adding more filetypes, but till then...enjoy!
+writer is an extremely simple and easy to use online writing tool, and I am DONE with adding file saving!! You can now download your written work as an HTML file(which opens in all browsers). I will try adding more filetypes, but till then...enjoy!
 <br>
 <br>
 Here is a screenshot of the editor:
