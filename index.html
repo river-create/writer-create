@@ -67,7 +67,7 @@ function download(){
     text = text.replace(/\n/g, "<br>");
     var blob = new Blob([text], { type: "text/plain"});
     var anchor = document.createElement("a");
-    head = head.replace(" ", "_")
+    head = head.replace(/ /g,"_")
     anchor.download = head.concat(".html");
     anchor.href = window.URL.createObjectURL(blob);
     anchor.target ="_blank";
