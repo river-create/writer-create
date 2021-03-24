@@ -65,6 +65,8 @@ function download(){
     var text = document.getElementById("writer-page").innerHTML;
     text = "<!Doctype HTML>".concat("<html><style>div{padding: 20px; width: 700px; margin: auto; font-family: Georgia; line-height: 1.6;}h1{padding: 20px; width: 700px; margin: auto; font-family: Georgia; line-height: 1.6;}p{padding: 20px; width: 700px; margin: auto; font-family: Georgia; line-height: 1.6;}</style><body><h1>",head,"</h1><p>",text,"<br><br><small> -",author,"</small></p></body></html>");
     text = text.replace(/\n/g, "<br>");
+    text = text.replace(/<div>/g, "");
+    text = text.replace(/</div>/g, "");
     var blob = new Blob([text], { type: "text/plain"});
     var anchor = document.createElement("a");
     head = head.replace(/ /g,"_")
