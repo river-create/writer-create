@@ -97,7 +97,7 @@ addEventListener("submit", (evt) => {
 // warn before closing if any inputs are modified
 addEventListener("beforeunload", (evt) => {
     if (modified_inputs.size) {
-        const unsaved_changes_warning = "Changes you made may not be saved.";
+        const unsaved_changes_warning = "Save your changes before leaving, or else you'll lose them.";
         evt.returnValue = unsaved_changes_warning;
         return unsaved_changes_warning;
     }
