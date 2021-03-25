@@ -57,11 +57,11 @@ min-height: 1200px
     border: 1px solid #00ad00;
   }
 ::selection {
-  color: black; background: #93ff8f;
+  color: black; background: #a4ff8f;
   }
   ::-moz-selection {
     color: black; 
-    background: #93ff8f;
+    background: #a4ff8f;
   }
 </style>
 <script>
@@ -113,7 +113,7 @@ function download(){
     var author = document.getElementById("author").innerHTML;
     var head = document.getElementById("head").innerHTML;
     var text = document.getElementById("writer-page").innerHTML;
-    text = "<!Doctype HTML>".concat("<html><style>::selection {color: black; background: #93ff8f;}::-moz-selection {color: black; background: #93ff8f;}small{padding: 10px; width: 700px; margin: auto; font-family: Georgia; line-height: 1.6;}div{padding: 10px; width: 700px; margin: auto; font-family: Georgia; line-height: 1.6;}h1{padding: 10px; width: 700px; margin: auto; font-family: Georgia; line-height: 1.6;}p{padding: 10px; width: 700px; margin: auto; font-family: Georgia; line-height: 1.6;}</style><body><h1>",head,"</h1><p>",text,"<br><br><div><small>",author,"</small></div></p></body></html>");
+    text = "<!Doctype HTML>".concat("<html><style>::selection {color: black; background: #a4ff8f;}::-moz-selection {color: black; background: #a4ff8f;}small{padding: 10px; width: 700px; margin: auto; font-family: Georgia; line-height: 1.6;}div{padding: 10px; width: 700px; margin: auto; font-family: Georgia; line-height: 1.6;}h1{padding: 10px; width: 700px; margin: auto; font-family: Georgia; line-height: 1.6;}p{padding: 10px; width: 700px; margin: auto; font-family: Georgia; line-height: 1.6;}</style><body><h1>",head,"</h1><p>",text,"<br><br><div><small>",author,"</small></div></p></body></html>");
     text = text.replace(/\n/g, "<br>");
     var blob = new Blob([text], { type: "text/plain"});
     var anchor = document.createElement("a");
